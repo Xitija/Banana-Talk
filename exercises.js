@@ -32,15 +32,44 @@ function clickHandler(){
 btnTranslate.addEventListener("click",clickHandler);
 */
 
+
+// var btnTranslate = document.querySelector("#btn-translate");
+// var txtInput = document.querySelector("#txt-input");
+// var outputDiv = document.querySelector("#output");
+
 // ex05: wire a div to show output
 /*
-var btnTranslate = document.querySelector("#btn-translate");
-var txtInput = document.querySelector("#txt-input");
-var outputDiv = document.querySelector("#output");
+
 outputDiv.innerText = "Hello";
 console.log(outputDiv);
 function clickHandler(){
     outputDiv.innerText = "uidjksjskjj" + txtInput.value.toUpperCase();
 }
-btnTranslate.addEventListener("click",clickHandler);
+
+*/
+// btnTranslate.addEventListener("click",clickHandler);
+
+// ex09: wire fetch call in app
+
+/*
+
+var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+
+function getTranslationURL(text){
+    return serverURL + "?text=" + text;
+}
+
+function errorHandler(err){
+    console.log("An error occured", err);
+    alert("Something went wrong , please try after sometime");
+}
+
+function clickHandler(){
+    var inputText = txtInput.value;
+    fetch(getTranslationURL(inputText))
+    .then(response => response.json())
+    .then(json => console.log(json))
+    .catch(errorHandler)
+}
+
 */
