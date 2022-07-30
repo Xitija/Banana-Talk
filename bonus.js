@@ -34,6 +34,11 @@ btnClear2.addEventListener("click",() => {
 
 
 function checkLeapYear(year){
+
+    if(!year){
+        return "Please select a date."
+    }
+
     var str = `Cool! The year (${year}) in the date (${date.value}) you selected turned out to be a Leap Year.!!`;
     var str2 = `Ah! The year (${year}) in the date (${date.value}) you selected is just a normal year.!!`;
 
