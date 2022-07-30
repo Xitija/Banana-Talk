@@ -38,6 +38,7 @@ function clickHandler(){
     .then(json => outputDiv.innerHTML = json.contents.translated)
     .catch(errorHandler)
   } else {
+    alert("Please enter something in the textbox as an input.")
     outputDiv.innerHTML = "";
   }
 }
