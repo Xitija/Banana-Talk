@@ -43,7 +43,7 @@ input, textarea, button {
     margin-bottom: 0%;
   }
 
-  .collapsible:hover {
+  .collapsible:hover , .clear:hover {
     background-color: #555;
   }
   
@@ -68,14 +68,13 @@ input, textarea, button {
 
   .btn-translate {
     margin-top: 0.5rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     background-color: var(--primary-color);
     border: none;
     cursor: pointer;
     font-size: large;
+    border: 0.5px solid var(--primary-color);
   }
 
   .btn-translate:hover {
@@ -105,7 +104,30 @@ input, textarea, button {
     color:gray;
   }
 
+  .clear {
+    background-color: wheat;
+    color: black;
+    cursor: pointer;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    border: 0.5px solid var(--primary-color);
+  }
+
   img {
     max-width: 100%;
     height: auto;
   }
+
+  .container-center{
+    max-width: 100%; /** less content easy to read **/
+    margin: auto;
+    padding: 0rem 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  /* Styles for bonus */
