@@ -131,3 +131,47 @@ input, textarea, button {
   }
 
   /* Styles for bonus */
+
+  h1 {
+    padding: 1rem;
+    display: block;
+    background-color: white;
+  }
+
+  h2 {
+    padding: 1rem;
+    display: block;
+    background-color: var(--secondary-color);
+  }
+
+  h3 {
+    max-width: fit-content;
+  }
+
+  .block {
+    padding: 1rem;
+    background-color: #e0e0c5;
+  }
+
+  .link {
+    background-color: wheat;
+    display: block;
+  }
+
+  .btn-clear {
+    background-color: var(--light-gray);
+    color: black ;
+    cursor: pointer;
+    font-size: medium;
+  }
+
+  .btn-submit {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+  }
+
+  .txt-size {
+    font-size: larger;
+  }
